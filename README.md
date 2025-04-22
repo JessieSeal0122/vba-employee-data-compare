@@ -8,16 +8,16 @@ It detects duplicate Employee IDs, highlights mismatched fields, and generates a
 ## 🧰 Features
 
 - Duplicate detection:
-Checks for duplicate Employee IDs in both Raw data 1 and Raw data 2. If duplicates are found, the macro highlights the IDs in red and stops execution.
--Data comparison:
-If no duplicates are found, the macro continues to compare records by Employee ID across both sheets.
--Results output:
-Any mismatched records are written to a newly created or cleared Results worksheet with color-coded highlights.
--Field-level mismatch marking:
-Yellow fill is used to mark mismatched fields side-by-side for easy auditing.
--Clear user feedback:
-If differences exist: Shows "比對完成！結果已儲存到 'Results' 工作表。"
-If no differences: Shows "無變更資料"
+  Checks for duplicate Employee IDs in both Raw data 1 and Raw data 2. If duplicates are found, the macro highlights the IDs in red and stops execution.
+- Data comparison:
+  If no duplicates are found, the macro continues to compare records by Employee ID across both sheets.
+- Results output:
+  Any mismatched records are written to a newly created or cleared Results worksheet with color-coded highlights.
+- Field-level mismatch marking:
+  Yellow fill is used to mark mismatched fields side-by-side for easy auditing.
+- Clear user feedback:
+  If differences exist: Shows "比對完成！結果已儲存到 'Results' 工作表。"
+  If no differences: Shows "無變更資料"
 
 ---
 
