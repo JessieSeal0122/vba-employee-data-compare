@@ -8,16 +8,12 @@ A VBA macro that compares two personnel data sheets in Excel, highlights mismatc
 
 - **Duplicate detection**:  
   Checks for duplicate Employee IDs in both "Raw data 1" and "Raw data 2". If duplicates are found, they are highlighted in red and the macro halts.
-  
 - **Data comparison**:  
   If no duplicates exist, the macro proceeds to compare specified fields across both sheets by Employee ID.
-
 - **Results output**:  
   Mismatched records are written to a "Results" sheet. The sheet is cleared if it already exists.
-
 - **Field-level highlighting**:  
   Yellow fill is used to mark differing fields side-by-side for easy review.
-
 - **User feedback**:  
   - If differences exist: shows “比對完成！結果已儲存到 'Results' 工作表。”  
   - If no differences: shows “無變更資料”
