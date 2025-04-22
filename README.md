@@ -1,23 +1,26 @@
 # vba-employee-data-compare
 
-This project automates the comparison of employee data between two worksheets using VBA.  
-It detects duplicate Employee IDs, highlights mismatched fields, and generates a side-by-side results summary with color-coded formatting.
+A VBA macro that compares two personnel data sheets in Excel, highlights mismatched fields, and generates a clear visual summary for auditing purposes.
 
 ---
 
 ## 🧰 Features
 
-- Duplicate detection:
-  Checks for duplicate Employee IDs in both Raw data 1 and Raw data 2. If duplicates are found, the macro highlights the IDs in red and stops execution.
-- Data comparison:
-  If no duplicates are found, the macro continues to compare records by Employee ID across both sheets.
-- Results output:
-  Any mismatched records are written to a newly created or cleared Results worksheet with color-coded highlights.
-- Field-level mismatch marking:
-  Yellow fill is used to mark mismatched fields side-by-side for easy auditing.
-- Clear user feedback:
-  If differences exist: Shows "比對完成！結果已儲存到 'Results' 工作表。"
-  If no differences: Shows "無變更資料"
+- **Duplicate detection**:  
+  Checks for duplicate Employee IDs in both "Raw data 1" and "Raw data 2". If duplicates are found, they are highlighted in red and the macro halts.
+  
+- **Data comparison**:  
+  If no duplicates exist, the macro proceeds to compare specified fields across both sheets by Employee ID.
+
+- **Results output**:  
+  Mismatched records are written to a "Results" sheet. The sheet is cleared if it already exists.
+
+- **Field-level highlighting**:  
+  Yellow fill is used to mark differing fields side-by-side for easy review.
+
+- **User feedback**:  
+  - If differences exist: shows “比對完成！結果已儲存到 'Results' 工作表。”  
+  - If no differences: shows “無變更資料”
 
 ---
 
@@ -34,6 +37,14 @@ It detects duplicate Employee IDs, highlights mismatched fields, and generates a
 - Cost Center  
 - Company Code  
 - Location  
+
+---
+
+## 📥 To import the macro:
+
+1. Open Excel and press `Alt + F11` to open the VBA editor.
+2. Go to `File > Import File...` and select `EmployeeDataComparer.bas`.
+3. Run `EmployeeDataComparer` from the macro list.
 
 ---
 
